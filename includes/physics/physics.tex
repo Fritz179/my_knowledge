@@ -17,64 +17,56 @@ Physics is **the branch of science that deals with the structure of matter and h
 
 \subsubsection{Derived}
 
-\newcommand{\llist}[7]{&\text{[#1}&&\,&\text{#2}&\,&\text{#3}&\,&\text{#4}&\,&\text{#5}&\,&\text{#6}&\,&\text{#7}&\text{]}}
-\newcommand{\unit}[4]{\\\text{#1:} \kern 1em & #2 &=& & #3 &\implies & #4 \\\,}
-%\renewcommand{\or}[2]{\text{#1:} \kern 1em &  &=& #2 & &  \\\,}
-\newcommand{\aproxor}[2]{\text{#1:} \kern 1em &  &\approx& & #2   \\\,}
 \newcommand{\pow}[2]{\text{#1}^\text{#2}}
 \renewcommand{\in}[1]{\left[#1\right]}
 
-$$
-% \newcommand\spacing[4]{#1& #2& #3 &#4}
-% \newcommand\unit[4]{\spacing{\text{#1:}}{#2 = }{#3 \implies}{\text{[#4]} \\\,\\}}
+\begin{equation}
+\newcommand{\llist}[7]{&\text{[#1}&&\,&\text{#2}&\,&\text{#3}&\,&\text{#4}&\,&\text{#5}&\,&\text{#6}&\,&\text{#7}&\text{]}}
+\newcommand{\unit}[4]{\\\text{#1:} \kern 1em & #2 &=& & #3 &\implies & #4 \\\,}
+\newcommand{\aproxor}[2]{\text{#1:} \kern 1em &  &\approx& & #2   \\\,}
 %
 \begin{alignedat}{12}
-&&&&&&\llist{s,}{m,}{kg,}{A,}{K,}{cd,}{mol} \\
-%
-% p = m / v
-\unit{Density}
-  {\rho}
-  {\dfrac{m\text{[kg]}}{V\in{\pow{m}{3}}}}
-  {\llist{0,}{-3,}{1}{}{}{}{}}
-%
-% F = m * a
-\unit{Force}
-  {F\in{\text{N}}}
-  {m\in{\text{kg}}\cdot a\in{\dfrac{\text{m}}{\pow{s}{2}}}}
-  {\llist{-2,}{1,}{1}{}{}{}{}}
-%
-%
-% p = F / a
-\unit{Pressure}
-  {p\in{\text{Pa}}}
-  {\dfrac{F\in{\text{N}}}{A\in{\pow{m}{2}}}}
-  {\llist{-2,}{-1,}{1}{}{}{}{}}
-%
-% termal coefficient
-\unit{Coefficient of thermal expansion}
-  {\alpha\in{\dfrac{1}{\text{K}}}}
-  {\dfrac{1}{\Delta T\in{\text{K}}}}
-  {\llist{}{}{}{}{-1}{}{}}
-%
-% P * t
-\unit{Energy}
-  {E\in{\text{J}}}
-  {P\in{\text{W}} \cdot t\in{\text{s}}}
-  {\llist{-2,}{2,}{1}{}{}{}{}}
-%
-%
-\unit{Energy}
-  {E\in{\text{J}}}
-  {P\in{\text{W}} \cdot t\in{\text{s}}}
-  {\llist{-2,}{2,}{1}{}{}{}{}}
-%
-\end{alignedat}
-%
-%\unit{Name}
-%  {in}
-%  {definition}
-%  {\llist{}{}{}{}{}{}{}}
-$$
+  &&&&&&\llist{s,}{m,}{kg,}{A,}{K,}{cd,}{mol} \\
+  %
+  % p = m / v
+  \unit{Density}
+    {\rho}
+    {\dfrac{m\text{[kg]}}{V\in{\pow{m}{3}}}}
+    {\llist{0,}{-3,}{1}{}{}{}{}}
+  %
+  % F = m * a
+  \unit{Force}
+    {F\in{\text{N}}}
+    {m\in{\text{kg}}\cdot a\in{\dfrac{\text{m}}{\pow{s}{2}}}}
+    {\llist{-2,}{1,}{1}{}{}{}{}}
+  %
+  %
+  % p = F / a
+  \unit{Pressure}
+    {p\in{\text{Pa}}}
+    {\dfrac{F\in{\text{N}}}{A\in{\pow{m}{2}}}}
+    {\llist{-2,}{-1,}{1}{}{}{}{}}
+  %
+  % termal coefficient
+  \unit{Coefficient of thermal expansion}
+    {\alpha\in{\dfrac{1}{\text{K}}}}
+    {\dfrac{1}{\Delta T\in{\text{K}}}}
+    {\llist{}{}{}{}{-1}{}{}}
+  %
+  % P * t
+  \unit{Energy}
+    {E\in{\text{J}}}
+    {P\in{\text{W}} \cdot t\in{\text{s}}}
+    {\llist{-2,}{2,}{1}{}{}{}{}}
+  %
+  %
+  \unit{Energy}
+    {E\in{\text{J}}}
+    {P\in{\text{W}} \cdot t\in{\text{s}}}
+    {\llist{-2,}{2,}{1}{}{}{}{}}
+  %
+  \end{alignedat}
+\end{equation}
 
 \subsubsection{Formulas}
 
