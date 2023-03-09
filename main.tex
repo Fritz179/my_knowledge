@@ -1,6 +1,18 @@
 \documentclass{article}
 
-\usepackage{hyperref}
+\usepackage{amsmath} % Math stuff
+\usepackage{amssymb} % math symbols
+\usepackage{graphicx} % include graphics
+\graphicspath{{./}{./includes}} % default directory
+
+\usepackage{hyperref} % include links
+
+\usepackage{geometry} % change layout
+\geometry{margin=2.5cm} % same as defaul word document
+
+\usepackage{lipsum} % for dummy text
+\usepackage{enumitem} % chage lists
+\setlist{noitemsep} % noitemsep / nosep
 
 \title{My knowledge}
 \author{Fabrizio Cortesi}
@@ -11,8 +23,18 @@
 
 \section*{Introduction}
 
-Testing links!
+Hello there!
 
-\href{run:./link.pdf}{lsfink?}
+\tableofcontents
+
+\include{./includes/mathematics/mathematics.tex}
+
+\include{./includes/physics/physics.tex}
+
+\include{./includes/german/german.tex}
+
+\include{./includes/chemistry/chemistry.tex}
+
+\include{./includes/worth_saving/worth_saving.tex}
 
 \end{document}

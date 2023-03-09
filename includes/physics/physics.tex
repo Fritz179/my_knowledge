@@ -1,0 +1,125 @@
+\section{Physics}
+
+Physics is **the branch of science that deals with the structure of matter and how the fundamental constituents of the universe interact**. It studies objects ranging from the very small using quantum mechanics to the entire universe using general relativity
+\subsection{Units}
+
+[Seven dimensions](https://www.youtube.com/watch?v=bI-FS7aZJpY) [s, m, kg, A, K, cd, mol]
+
+\subsubsection{SI}
+
+- time $t$[s] in seconds
+- length $l$[m] in meters
+- mass $m$[kg] in kilograms
+- electric current $I$[A] in ampere
+- temperature $T$[K] in kelvin
+- luminous intensity [cd] in candela
+- amount of substance [mol] in mole
+
+\subsubsection{Derived}
+
+\newcommand{\llist}[7]{&\text{[#1}&&\,&\text{#2}&\,&\text{#3}&\,&\text{#4}&\,&\text{#5}&\,&\text{#6}&\,&\text{#7}&\text{]}}
+\newcommand{\unit}[4]{\\\text{#1:} \kern 1em & #2 &=& & #3 &\implies & #4 \\\,}
+%\renewcommand{\or}[2]{\text{#1:} \kern 1em &  &=& #2 & &  \\\,}
+\newcommand{\aproxor}[2]{\text{#1:} \kern 1em &  &\approx& & #2   \\\,}
+\newcommand{\pow}[2]{\text{#1}^\text{#2}}
+\renewcommand{\in}[1]{\left[#1\right]}
+
+$$
+% \newcommand\spacing[4]{#1& #2& #3 &#4}
+% \newcommand\unit[4]{\spacing{\text{#1:}}{#2 = }{#3 \implies}{\text{[#4]} \\\,\\}}
+%
+\begin{alignedat}{12}
+&&&&&&\llist{s,}{m,}{kg,}{A,}{K,}{cd,}{mol} \\
+%
+% p = m / v
+\unit{Density}
+  {\rho}
+  {\dfrac{m\text{[kg]}}{V\in{\pow{m}{3}}}}
+  {\llist{0,}{-3,}{1}{}{}{}{}}
+%
+% F = m * a
+\unit{Force}
+  {F\in{\text{N}}}
+  {m\in{\text{kg}}\cdot a\in{\dfrac{\text{m}}{\pow{s}{2}}}}
+  {\llist{-2,}{1,}{1}{}{}{}{}}
+%
+%
+% p = F / a
+\unit{Pressure}
+  {p\in{\text{Pa}}}
+  {\dfrac{F\in{\text{N}}}{A\in{\pow{m}{2}}}}
+  {\llist{-2,}{-1,}{1}{}{}{}{}}
+%
+% termal coefficient
+\unit{Coefficient of thermal expansion}
+  {\alpha\in{\dfrac{1}{\text{K}}}}
+  {\dfrac{1}{\Delta T\in{\text{K}}}}
+  {\llist{}{}{}{}{-1}{}{}}
+%
+% P * t
+\unit{Energy}
+  {E\in{\text{J}}}
+  {P\in{\text{W}} \cdot t\in{\text{s}}}
+  {\llist{-2,}{2,}{1}{}{}{}{}}
+%
+%
+\unit{Energy}
+  {E\in{\text{J}}}
+  {P\in{\text{W}} \cdot t\in{\text{s}}}
+  {\llist{-2,}{2,}{1}{}{}{}{}}
+%
+\end{alignedat}
+%
+%\unit{Name}
+%  {in}
+%  {definition}
+%  {\llist{}{}{}{}{}{}{}}
+$$
+
+\subsubsection{Formulas}
+
+% p = rho * g * h
+Static fluid pressure: $
+    \rho\in{\dfrac{\text{kg}}{\pow{m}{3}}}\cdot 
+    g\in{\dfrac{\text{m}}{\pow{s}{2}}}\cdot
+    h\in{\text{m}}$
+\\
+Buoyancy: $F_\text{B} = -\rho gV$ = -ma
+\\
+Linear expansion: $\Delta l = l_0 \cdot \alpha \cdot \Delta T$
+\\
+Volumetric expansion: $\Delta l = l_0 \cdot \gamma \cdot \Delta T \qquad \gamma \approx 3\cdot\alpha$
+\\
+Density with temperature change: $\rho_1 = \dfrac{\rho_0}{1+\delta\cdot\Delta\text{T}}$
+%[Coefficient of thermal expansion](https://en.wikipedia.org/wiki/Thermal_expansion#Coefficient_of_thermal_expansion)
+\\
+Ideal gas law: $PV = nRT$
+\subsubsection{Constants}
+
+STP Standard Temperature Pressure: $\qquad 273.15\text{K} \qquad 10^5\text{Pa}$ 
+
+$g_\text{earth}$ $= 9.81 \text{m}\cdot\text{s}^\text{2}$ \\
+$\alpha_\text{material} = $
+
+\subsubsection{Conversions}
+
+Temperature: \qquad $0\text{°C} = 273.15\text{K}=32\text{°F} \qquad \text{°F} = \text{°C} \cdot \dfrac{5}{9} + 32 \qquad \text{°C} = \text{K} + 273.15$
+\\\\
+Pressure: \qquad
+  $1\text{bar} = 10^5\text{Pa} \qquad 
+   1\text{Torr} = 1\text{mmHg} = 133.3\text{Pa} \qquad
+   1\text{atm} = 101'325\text{Pa}$
+\\\\
+Speed: $\qquad 1\dfrac{\text{km}}{\text{h}}     = 3.6\dfrac{\text{m}}{\text{s}}$
+
+\subsection{Laws \& Principles}
+
+%### Archimedes' principle states:
+An object immersed in a fluid experiences a **buoyant force** that is equal in magnitude to the force of gravity on the displaced fluid.
+
+%### Pascal's law states:
+That the pressure exerted on a **fluid** in an enclosed container is transmitted **equally and undiminished to all parts of the container** and acts at right angle to the enclosing walls
+
+%![Pressure vs altitude](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Pressure_water_air_%28en%29.svg/1920px-Pressure_water_air_%28en%29.svg.png)
+
+\subsection{States of matter}
